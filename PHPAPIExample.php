@@ -15,5 +15,6 @@ $build->build($dbname, $dbpath);
 $load = new Connector($host,$port);
 $load->load($dbname);
 $query = new Connector($host,$port);
-$query->query($query1);
+$result = $query->query($query1);
+echo $result;
 ?>
